@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK HUB!</title>    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/d027480c9c.js" crossorigin="anonymous" defer></script>  
+    <script src="./shop.js" defer></script>
+</head>
+<body>
+    <header id="main-header">
+        <nav class="navbar navbar-expand-lg px-4">
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav text-capitalize mx-auto">
+                    <li class="nav-item active">
+                        <b><a href="#main-header" class="nav-link">home</a></b>
+                    </li>
+                    <li class="nav-item active">
+                        <b><a href="#about" class="nav-link">about us</a></b>
+                    </li>
+                    <li class="nav-item active">
+                        <b><a href="#products" class="nav-link">products</a></b>
+                    </li>
+                    <li class="nav-item active">
+                        <b><a href="#contactus" class="nav-link">contact us</a></b>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row banner justify-content-center align-items-center">
+                <div class="col-10 mx-auto banner-info text-center">
+                    <h1 class="banner-title">Welcome To <strong class="banner-title">BOOK HUB!</strong></h1>
+                    <a href="#products" class="btn banner-link text-uppercase  my-2">explore</a>
+                </div>
+           </div>
+        </div>
+    </header>
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto col-md-6 my-5">
+                    <h2 class="banner-title">ABOUT US</h2>
+                    <p class="text-highlighted"><b>BookHub is passionate about books and encourages reading for both pleasure and education.
+                        Everything we do at The Book Hub Publishing Group is in service of this purpose, and working with authors provides us with a powerful tool to make change happen locally and globally.
+                        We provide a broad and diverse range of books and to make them available to the widest possible base with a personal flavor.</b></p>
+                      <h4><q><strong><i>We urge you to please support local business and local books, and to encourage everyone to keep reading!</i></strong></q></h4>
+                    <a href="#products" class="btn btn-black text-uppercase">explore</a>
+                </div>
+                <div class="col-10 mx-auto col-md-6 my-5">
+                    <div class="about-img-container">
+                        <img src="C:\Users\Dell\OneDrive\Desktop\book1.jpg" height="150%" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto col-xs-6 text-center">
+                    <h1 class="text-highlighted">Featured Products</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 mx-auto col-md-6">
+                    <form action="">
+                        <div class="input-group my-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text search-box">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" id="search-item" class="form-control" placeholder="Search Books...">
+                        </div>
+                    </form>
+             </div>
+        </div>
+       <div class="container">
+           <div class="row product-items py-5" id="product-items">
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 product-item food-item" data-item="food-item">
+                    <div class="card single-item">
+                        <div class="img-container">
+                            <img src="C:\Users\Dell\OneDrive\Desktop\action.jpg" alt="book 1" class="card-img-top product-img">
+                            <span class="product-item-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5 id="product-item-name">Action AND Adventure</h5>
+                                
+                            </div>
+                        </div>
+                 </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 product-item food-item" data-item="food-item">
+                <div class="card single-item">
+                    <div class="img-container">
+                        <img src="C:\Users\Dell\OneDrive\Desktop\history.jpg" alt="book 2" class="card-img-top product-img">
+                        <span class="product-item-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="product-item-name">Historical Books</h5>
+                      
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 product-item food-item" data-item="food-item">
+                <div class="card single-item">
+                    <div class="img-container">
+                        <img src="C:\Users\Dell\OneDrive\Desktop\literary.jpg" alt="book 3" class="card-img-top product-img">
+                        <span class="product-item-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text d-flex justify-content-between text-capitalize">
+                            <h5 id="product-item-name">Literary Fiction</h5>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactus">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 footer-title py-5">
+                    <h1 class="text-capitalize banner-title text-center"><strong>BOOK HUB!</strong></h1>
+                    <div class="footer-icons mt-3 d-flex justify-content-center align-items-center flex-wrap flex-column">
+                        <a href="#" class="footer-icon p-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-icon p-2">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-icon p-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-icon p-2">
+                            <i class="fab fa-snapchat"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+                    <form>
+                        <fieldset class="text-capitalize">
+                          <legend ><b>contact us</b></legend>
+                          <div class="form-group">
+                             <label for="input-email">Email address</label>
+                                <input type="email" class="form-control" id="input-email"  placeholder="Enter email">
+                                <p id="email-help" class="form-text">We'll never share your email with anyone else.</p>
+                          </div>                          
+                          <div class="form-group">
+                                <label for="input-text">your message</label>
+                                <textarea class="form-control" id="input-text" rows="5" placeholder="Enter your message"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-black">
+                              <span class="btn-font">Submit</span>
+                            </button>
+                        </fieldset>
+                  </form>
+              </div>
+           </div>
+        </div>
+    </section>
+</body>
+</html>
